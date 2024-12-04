@@ -1,0 +1,216 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f0f2f5; /* Light grey background for the entire page */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #007bff, #0056b3); /* Trust blue gradient */
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 3px solid #004085;
+}
+
+header h1 {
+    font-size: 2.5rem; 
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Gold for attention */
+}
+
+/* Section Styles */
+section {
+    padding: 3rem 1.5rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Highlight Section */
+.highlight {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1);
+    text-align: center;
+}
+
+.highlight h2 {
+    font-size: 2.2rem;
+    color: #007bff; /* Trust blue */
+}
+
+.highlight p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Warning Section */
+.warning {
+    background-color: #fff3cd; /* Light yellow for caution */
+    padding: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #856404;
+    border: 2px solid #856404;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+/* Services Section */
+.services {
+    background-color: #e9f7ef; /* Light green background for services */
+    padding: 3rem 1.5rem;
+}
+
+.services ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    padding-left: 0;
+}
+
+.services li {
+    list-style: none;
+    padding: 1rem;
+    background-color: #ffffff; /* White background for service items */
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.services li::before {
+    content: "✔️";
+    margin-right: 0.5rem;
+    color: #28a745; /* Green for financial growth */
+}
+
+/* CTA Button */
+.cta-button {
+    background-color: #28a745; /* Financial green */
+    color: white;
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838; /* Darker green for hover effect */
+    transform: scale(1.05);
+}
+
+/* Contact Details */
+.contact-details {
+    background-color: #f8f9fa; /* Light grey background for contact details */
+    padding: 3rem 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+/* Testimonial Section */
+.testimonial {
+    background-color: #ffffff; /* White background for testimonials */
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #004085;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 -4px 10px rgba(0, 123, 255, 0.1);
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .services ul {
+        columns: 1;
+    }
+
+    .highlight h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-button {
+        font-size: 1.2rem;
+    }
+}
